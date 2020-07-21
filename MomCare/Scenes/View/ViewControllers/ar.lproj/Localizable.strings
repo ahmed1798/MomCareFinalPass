@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  MomCare
+
+  Created by Ebrahim  Mo Gedamy on 6/30/20.
+  Copyright © 2020 Ebrahim  Mo Gedamy. All rights reserved.
+*/
+"AlertTitle" = "تنبيه";
+"AlertMessage" = "تطبيق الواتس آب ليس موجود";
+"AcceptTitle" = "تحميل";
+"CancelTitle" = "إلغاء";
+"Photo Source" = "مصدر الصورة";
+"Choose a source" = "أختر المصدر";
+"Camera" = "التقط صورة";
+"OhNo" = "Oh😊😊No";
+"Sorry" = "عفواً ، الكاميرا غير متاحة";
+"Ok" = "أوافق";
+"Photo Library" = "معرض الصور";
+"Error" = "خطأ";
+"Error image" = "خطأ في تعديل الصورة";
+"Try Again!!" = "حاول مجدداً!!";
+"Now" = "الآن";
+"Choose your Time" = "أختر الوقت";
+

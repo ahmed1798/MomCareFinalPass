@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChildPeriodVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="backBu" destination="Ff1-Nw-5kU" id="g2c-l3-CdF"/>
+                <outlet property="modeTextView" destination="6Pa-tr-b8A" id="UkI-S6-yvs"/>
+                <outlet property="sleepTextView" destination="WOX-GK-Uc0" id="36w-Zr-lTY"/>
+                <outlet property="titleLbl" destination="fvY-23-gey" id="YYF-uD-FH2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jj6-9R-MSx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvY-23-gey" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                            <rect key="frame" x="141" y="4" width="38.5" height="32"/>
+                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                            <color key="textColor" red="0.077752885150000006" green="0.62812354640000001" blue="0.70788388319999995" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff1-Nw-5kU">
+                            <rect key="frame" x="20" y="12.5" width="20" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="mBZ-PU-5kL"/>
+                                <constraint firstAttribute="width" constant="20" id="naK-BC-nvq"/>
+                            </constraints>
+                            <state key="normal" image="arrow_point"/>
+                            <connections>
+                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="FQ5-SX-xh8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="fvY-23-gey" firstAttribute="centerY" secondItem="jj6-9R-MSx" secondAttribute="centerY" id="2NK-Jo-vrY"/>
+                        <constraint firstAttribute="height" constant="40" id="8oY-Hd-2gv"/>
+                        <constraint firstItem="fvY-23-gey" firstAttribute="centerX" secondItem="jj6-9R-MSx" secondAttribute="centerX" id="N98-dW-jpN"/>
+                        <constraint firstItem="Ff1-Nw-5kU" firstAttribute="leading" secondItem="jj6-9R-MSx" secondAttribute="leading" constant="20" id="PGv-ss-52i"/>
+                        <constraint firstItem="Ff1-Nw-5kU" firstAttribute="centerY" secondItem="fvY-23-gey" secondAttribute="centerY" id="beK-5F-gB9"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep Mode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48i-cu-d9q" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                    <rect key="frame" x="20" y="61" width="284" height="29"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="نمط النوم"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-tr-b8A">
+                    <rect key="frame" x="10" y="98" width="299" height="135"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="135" id="fD4-tD-4Pj"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When my baby sleep fpr long hours without anxiety" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4K-qX-Ka0" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                    <rect key="frame" x="20" y="264" width="284" height="57"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="متي يبدأ طفلي بالنوم لساعات دون تقطع"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WOX-GK-Uc0">
+                    <rect key="frame" x="10" y="329" width="299" height="135"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="135" id="xcj-rZ-Ugc"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="WOX-GK-Uc0" firstAttribute="leading" secondItem="6Pa-tr-b8A" secondAttribute="leading" id="0ct-by-dPJ"/>
+                <constraint firstItem="P4K-qX-Ka0" firstAttribute="top" secondItem="6Pa-tr-b8A" secondAttribute="bottom" constant="31" id="1EN-Ge-DWD"/>
+                <constraint firstItem="jj6-9R-MSx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3Uz-FM-OVV"/>
+                <constraint firstItem="WOX-GK-Uc0" firstAttribute="trailing" secondItem="6Pa-tr-b8A" secondAttribute="trailing" id="4mm-AV-ROj"/>
+                <constraint firstItem="WOX-GK-Uc0" firstAttribute="top" secondItem="P4K-qX-Ka0" secondAttribute="bottom" constant="8" id="6Ki-7C-JlK"/>
+                <constraint firstItem="jj6-9R-MSx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B7d-U3-hDc"/>
+                <constraint firstItem="48i-cu-d9q" firstAttribute="top" secondItem="jj6-9R-MSx" secondAttribute="bottom" constant="21" id="Bu2-RD-bLA"/>
+                <constraint firstItem="6Pa-tr-b8A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="KUf-cA-tux"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jj6-9R-MSx" secondAttribute="trailing" id="KaX-eG-tGR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Pa-tr-b8A" secondAttribute="trailing" constant="11" id="cYb-1L-660"/>
+                <constraint firstItem="P4K-qX-Ka0" firstAttribute="trailing" secondItem="48i-cu-d9q" secondAttribute="trailing" id="gIe-64-aJ5"/>
+                <constraint firstItem="48i-cu-d9q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kMi-Qs-UvP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="48i-cu-d9q" secondAttribute="trailing" constant="16" id="rz6-vy-gH2"/>
+                <constraint firstItem="6Pa-tr-b8A" firstAttribute="top" secondItem="48i-cu-d9q" secondAttribute="bottom" constant="8" id="v3Y-mq-sj7"/>
+                <constraint firstItem="P4K-qX-Ka0" firstAttribute="leading" secondItem="48i-cu-d9q" secondAttribute="leading" id="vM1-Lk-Q13"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.75" y="141.5492957746479"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_point" width="13.5" height="24"/>
+    </resources>
+</document>

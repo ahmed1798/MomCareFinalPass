@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DoctorsCVCell" id="gTV-IL-0wX" customClass="DoctorsCVCell" customModule="MomCare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnd-bx-61J">
+                        <rect key="frame" x="0.0" y="44" width="270" height="216"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sd" translatesAutoresizingMaskIntoConstraints="NO" id="gut-j8-tyh">
+                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="mbs-D5-2iF"/>
+                                    <constraint firstAttribute="height" constant="50" id="nVR-aN-oSM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ep-YK-8tn" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="73" y="21" width="20" height="38"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
+                                <color key="textColor" red="0.077752885150000006" green="0.62812354640000001" blue="0.70788388319999995" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="دكتور"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zyad Ayman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn8-eK-46E" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="95" y="21" width="104.5" height="38"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="20"/>
+                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="زياد أيمن"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ8-Mi-eev" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="102.5" y="116" width="28.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="6.30"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck0-H0-mil" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="190" y="148.5" width="28.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="6.30"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daily from" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2e-p8-aex" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="32" y="116" width="63" height="29"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="يومياً من"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hky-fb-Vf5" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="139" y="114.5" width="15" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إلي"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI1-hK-e1G" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="164" y="112.5" width="28.5" height="36"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="6.30"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thrusday " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-px-5kS" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="32" y="150" width="59.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الخميس"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="available dialy except" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl2-Uk-BRw" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="32" y="68" width="132.5" height="43"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="متاح يومياً ما عدا "/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-Oa-nnV" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="167" y="148.5" width="15" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إلي"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="sunday  monday" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fc-9M-jVb" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="169.5" y="77" width="95.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="السبت   الأحد"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="1vX-IK-IUv">
+                                <rect key="frame" x="5" y="77" width="20" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ARL-hJ-uXG"/>
+                                    <constraint firstAttribute="width" constant="20" id="l1H-2d-3w9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock-circular-outline" translatesAutoresizingMaskIntoConstraints="NO" id="jkV-AA-h9J">
+                                <rect key="frame" x="5" y="123" width="20" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="063-pH-vKb"/>
+                                    <constraint firstAttribute="height" constant="15" id="Hwy-Qn-A93"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call-answer" translatesAutoresizingMaskIntoConstraints="NO" id="pRf-hM-Tof">
+                                <rect key="frame" x="5" y="189" width="20" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="2dS-f6-9j3"/>
+                                    <constraint firstAttribute="width" constant="20" id="nhx-mI-haN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0100999899" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZd-dv-LdW" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="32" y="182" width="84.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="0100999899"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm8-WC-F3A" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="95" y="150" width="30.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="من"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.30" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4P-ki-tlj" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                <rect key="frame" x="133" y="145" width="28.5" height="39"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" red="0.084611060720000006" green="0.676601813" blue="0.75561151650000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="6.30"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JZd-dv-LdW" firstAttribute="centerY" secondItem="pRf-hM-Tof" secondAttribute="centerY" id="1vu-Uz-KMd"/>
+                            <constraint firstItem="hI1-hK-e1G" firstAttribute="centerY" secondItem="hky-fb-Vf5" secondAttribute="centerY" id="3xN-aO-7IJ"/>
+                            <constraint firstItem="9ep-YK-8tn" firstAttribute="leading" secondItem="gut-j8-tyh" secondAttribute="trailing" constant="8" id="5Ym-CN-5vx"/>
+                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="top" secondItem="hI1-hK-e1G" secondAttribute="bottom" id="6QI-CR-wdL"/>
+                            <constraint firstItem="Ck0-H0-mil" firstAttribute="centerY" secondItem="kXE-Oa-nnV" secondAttribute="centerY" id="AnP-ZB-uzQ"/>
+                            <constraint firstItem="Ck0-H0-mil" firstAttribute="leading" secondItem="kXE-Oa-nnV" secondAttribute="trailing" constant="8" id="DlW-Ys-7Di"/>
+                            <constraint firstItem="JZd-dv-LdW" firstAttribute="leading" secondItem="pRf-hM-Tof" secondAttribute="trailing" constant="7" id="HcV-vP-ChA"/>
+                            <constraint firstItem="pRf-hM-Tof" firstAttribute="top" secondItem="XxC-px-5kS" secondAttribute="bottom" constant="10" id="IU9-5i-JRs"/>
+                            <constraint firstItem="gJ8-Mi-eev" firstAttribute="top" secondItem="w2e-p8-aex" secondAttribute="top" id="IfQ-Yi-tfr"/>
+                            <constraint firstItem="k4P-ki-tlj" firstAttribute="centerY" secondItem="XxC-px-5kS" secondAttribute="centerY" id="K2O-8h-pOP"/>
+                            <constraint firstItem="jkV-AA-h9J" firstAttribute="centerY" secondItem="w2e-p8-aex" secondAttribute="centerY" id="Kem-Yi-b7E"/>
+                            <constraint firstItem="1vX-IK-IUv" firstAttribute="centerY" secondItem="Nl2-Uk-BRw" secondAttribute="centerY" id="LPq-t1-ke4"/>
+                            <constraint firstItem="XxC-px-5kS" firstAttribute="leading" secondItem="w2e-p8-aex" secondAttribute="leading" id="N6e-PD-6ci"/>
+                            <constraint firstItem="Qn8-eK-46E" firstAttribute="leading" secondItem="9ep-YK-8tn" secondAttribute="trailing" constant="2" id="Phk-bz-NPI"/>
+                            <constraint firstItem="7fc-9M-jVb" firstAttribute="leading" secondItem="Nl2-Uk-BRw" secondAttribute="trailing" constant="5" id="Se2-2w-aSR"/>
+                            <constraint firstItem="pRf-hM-Tof" firstAttribute="leading" secondItem="jkV-AA-h9J" secondAttribute="leading" id="VIc-VZ-yxr"/>
+                            <constraint firstItem="hky-fb-Vf5" firstAttribute="leading" secondItem="gJ8-Mi-eev" secondAttribute="trailing" constant="8" id="Vzc-Du-AjH"/>
+                            <constraint firstItem="w2e-p8-aex" firstAttribute="top" secondItem="Nl2-Uk-BRw" secondAttribute="bottom" constant="5" id="WiP-u6-Yee"/>
+                            <constraint firstItem="k4P-ki-tlj" firstAttribute="top" secondItem="gJ8-Mi-eev" secondAttribute="bottom" id="XdQ-ou-ubZ"/>
+                            <constraint firstItem="1vX-IK-IUv" firstAttribute="top" secondItem="gut-j8-tyh" secondAttribute="bottom" constant="12" id="ZPd-xT-qrK"/>
+                            <constraint firstItem="gut-j8-tyh" firstAttribute="leading" secondItem="hnd-bx-61J" secondAttribute="leading" constant="15" id="Zg4-79-yiw"/>
+                            <constraint firstItem="gJ8-Mi-eev" firstAttribute="leading" secondItem="w2e-p8-aex" secondAttribute="trailing" constant="7.5" id="a2j-G2-QXX"/>
+                            <constraint firstItem="Qn8-eK-46E" firstAttribute="centerY" secondItem="9ep-YK-8tn" secondAttribute="centerY" id="cCO-fe-oOv"/>
+                            <constraint firstAttribute="trailing" secondItem="7fc-9M-jVb" secondAttribute="trailing" constant="5" id="chf-Zi-pwY"/>
+                            <constraint firstItem="k4P-ki-tlj" firstAttribute="leading" secondItem="Mm8-WC-F3A" secondAttribute="trailing" constant="7.5" id="d7B-QM-jC8"/>
+                            <constraint firstItem="hI1-hK-e1G" firstAttribute="leading" secondItem="hky-fb-Vf5" secondAttribute="trailing" constant="10" id="dgl-p8-G4S"/>
+                            <constraint firstItem="w2e-p8-aex" firstAttribute="leading" secondItem="Nl2-Uk-BRw" secondAttribute="leading" id="g5k-tJ-sTC"/>
+                            <constraint firstItem="1vX-IK-IUv" firstAttribute="leading" secondItem="hnd-bx-61J" secondAttribute="leading" constant="5" id="hSh-Hi-Acd"/>
+                            <constraint firstItem="jkV-AA-h9J" firstAttribute="leading" secondItem="1vX-IK-IUv" secondAttribute="leading" id="iXF-rH-jri"/>
+                            <constraint firstItem="gut-j8-tyh" firstAttribute="top" secondItem="hnd-bx-61J" secondAttribute="top" constant="15" id="iae-rp-68k"/>
+                            <constraint firstItem="gJ8-Mi-eev" firstAttribute="centerY" secondItem="w2e-p8-aex" secondAttribute="centerY" id="igH-LF-yeu"/>
+                            <constraint firstItem="9ep-YK-8tn" firstAttribute="centerY" secondItem="gut-j8-tyh" secondAttribute="centerY" id="lgb-MZ-iFu"/>
+                            <constraint firstItem="jkV-AA-h9J" firstAttribute="top" secondItem="1vX-IK-IUv" secondAttribute="bottom" constant="21" id="nhN-t6-XCW"/>
+                            <constraint firstItem="Mm8-WC-F3A" firstAttribute="leading" secondItem="XxC-px-5kS" secondAttribute="trailing" constant="3.5" id="oP1-DJ-XdU"/>
+                            <constraint firstItem="hky-fb-Vf5" firstAttribute="centerY" secondItem="gJ8-Mi-eev" secondAttribute="centerY" id="qB1-Gx-Ybx"/>
+                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="leading" secondItem="k4P-ki-tlj" secondAttribute="trailing" constant="5.5" id="rQL-dI-5JE"/>
+                            <constraint firstItem="7fc-9M-jVb" firstAttribute="centerY" secondItem="Nl2-Uk-BRw" secondAttribute="centerY" id="rs8-zZ-QfA"/>
+                            <constraint firstItem="w2e-p8-aex" firstAttribute="leading" secondItem="jkV-AA-h9J" secondAttribute="trailing" constant="7" id="sSV-WT-8u2"/>
+                            <constraint firstItem="XxC-px-5kS" firstAttribute="top" secondItem="w2e-p8-aex" secondAttribute="bottom" constant="5" id="t7K-59-RHZ"/>
+                            <constraint firstItem="Ck0-H0-mil" firstAttribute="top" secondItem="hI1-hK-e1G" secondAttribute="bottom" id="w5S-sI-Y3u"/>
+                            <constraint firstItem="Mm8-WC-F3A" firstAttribute="centerY" secondItem="XxC-px-5kS" secondAttribute="centerY" id="yYC-cI-Xa2"/>
+                            <constraint firstItem="kXE-Oa-nnV" firstAttribute="centerY" secondItem="k4P-ki-tlj" secondAttribute="centerY" id="z8L-3o-pLf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hnd-bx-61J" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="6XY-xT-hGn"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="hnd-bx-61J" secondAttribute="top" id="R12-pi-ybc"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="hnd-bx-61J" secondAttribute="trailing" id="TFl-rx-Ckx"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="hnd-bx-61J" secondAttribute="bottom" constant="40" id="uCM-L0-BqS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="270" height="240"/>
+            <connections>
+                <outlet property="availableDayes" destination="Nl2-Uk-BRw" id="VkT-jc-g4p"/>
+                <outlet property="containerView" destination="hnd-bx-61J" id="ljc-9u-Ihe"/>
+                <outlet property="dailyFrom" destination="w2e-p8-aex" id="Tyz-gd-iAb"/>
+                <outlet property="drName" destination="Qn8-eK-46E" id="3Xf-kk-Yc5"/>
+                <outlet property="drProfileImg" destination="gut-j8-tyh" id="WF5-dK-YGK"/>
+                <outlet property="end" destination="hI1-hK-e1G" id="w2g-7Q-M04"/>
+                <outlet property="holidayes" destination="7fc-9M-jVb" id="lj7-ol-i5C"/>
+                <outlet property="moNum" destination="JZd-dv-LdW" id="V50-AT-WKS"/>
+                <outlet property="otherDayes" destination="XxC-px-5kS" id="TYb-Hi-uBu"/>
+                <outlet property="statr" destination="gJ8-Mi-eev" id="IFB-OF-Ygh"/>
+                <outlet property="to2Lbl" destination="kXE-Oa-nnV" id="Vg7-rq-G5s"/>
+                <outlet property="toLbl" destination="hky-fb-Vf5" id="2DS-6H-t7H"/>
+            </connections>
+            <point key="canvasLocation" x="102.89855072463769" y="117.1875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" width="24" height="24"/>
+        <image name="call-answer" width="16.5" height="16"/>
+        <image name="clock-circular-outline" width="16" height="16"/>
+        <image name="sd" width="40" height="41"/>
+    </resources>
+</document>

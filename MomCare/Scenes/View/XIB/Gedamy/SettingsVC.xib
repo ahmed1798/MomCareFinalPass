@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsVC" customModule="MomCare" customModuleProvider="target">
+            <connections>
+                <outlet property="backBu" destination="Eoj-lV-k43" id="xxQ-If-hIH"/>
+                <outlet property="helpBu" destination="tnC-9y-5Xf" id="L5o-eq-fQZ"/>
+                <outlet property="langBu" destination="6tg-3K-4yJ" id="J9o-TA-aEJ"/>
+                <outlet property="privacyBu" destination="J0v-ep-zfK" id="37l-iw-R7G"/>
+                <outlet property="view" destination="jua-fz-ruw" id="uEc-dD-7rC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jua-fz-ruw">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5WN-CA-FBc">
+                    <rect key="frame" x="0.0" y="44" width="320" height="606"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xu6-Pu-NKk">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sr0-S5-c2V">
+                                    <rect key="frame" x="0.0" y="-3" width="320" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MF8-zn-WJ8" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="124.5" y="14" width="71" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الإعدادات"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoj-lV-k43">
+                                            <rect key="frame" x="15" y="15" width="14" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="dw7-yI-4QC"/>
+                                            </constraints>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="arrow_pointt">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="backBuTapped:" destination="-1" eventType="touchUpInside" id="cpz-W5-Cw5"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.25882352941176467" green="0.82352941176470584" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="Eoj-lV-k43" firstAttribute="centerY" secondItem="MF8-zn-WJ8" secondAttribute="centerY" id="0uH-7G-4RT"/>
+                                        <constraint firstItem="MF8-zn-WJ8" firstAttribute="centerY" secondItem="sr0-S5-c2V" secondAttribute="centerY" id="SMY-hH-TdR"/>
+                                        <constraint firstItem="MF8-zn-WJ8" firstAttribute="centerX" secondItem="sr0-S5-c2V" secondAttribute="centerX" id="aWD-Dw-UHO"/>
+                                        <constraint firstItem="Eoj-lV-k43" firstAttribute="leading" secondItem="sr0-S5-c2V" secondAttribute="leading" constant="15" id="jG4-zq-yW2"/>
+                                        <constraint firstAttribute="height" constant="50" id="s6Q-Jg-7je"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guC-7P-zhA">
+                                    <rect key="frame" x="0.0" y="55" width="320" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder checks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO5-iF-eHy" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="6.5" width="100.5" height="27"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="تذكير بالفحوصات"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-fA-O9A">
+                                            <rect key="frame" x="236" y="4.5" width="51" height="31"/>
+                                        </switch>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="qh4-fA-O9A" firstAttribute="centerY" secondItem="aO5-iF-eHy" secondAttribute="centerY" id="UFl-zV-m1Z"/>
+                                        <constraint firstAttribute="height" constant="40" id="mzU-Ua-MlA"/>
+                                        <constraint firstAttribute="trailing" secondItem="qh4-fA-O9A" secondAttribute="trailing" constant="35" id="teK-uC-kgu"/>
+                                        <constraint firstItem="aO5-iF-eHy" firstAttribute="leading" secondItem="guC-7P-zhA" secondAttribute="leading" constant="20" id="ubS-l9-PPH"/>
+                                        <constraint firstItem="aO5-iF-eHy" firstAttribute="centerY" secondItem="guC-7P-zhA" secondAttribute="centerY" id="zpY-i0-NXT"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZj-nF-VY7">
+                                    <rect key="frame" x="0.0" y="160" width="320" height="1"/>
+                                    <color key="backgroundColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="5Zg-1n-oEU"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeE-N7-8x2">
+                                    <rect key="frame" x="0.0" y="226" width="320" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help and Support" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yz2-wM-cNk" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="18" y="6.5" width="102.5" height="27"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="السياسة والدعم"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnC-9y-5Xf" customClass="LocalizableButton" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="265" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="8xP-hl-KkK"/>
+                                                <constraint firstAttribute="width" constant="20" id="vKk-yc-MfX"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" image="forward">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="tnC-9y-5Xf" firstAttribute="centerY" secondItem="Yz2-wM-cNk" secondAttribute="centerY" id="G0e-q6-kl7"/>
+                                        <constraint firstAttribute="height" constant="40" id="lAI-U6-3ID"/>
+                                        <constraint firstItem="Yz2-wM-cNk" firstAttribute="centerY" secondItem="VeE-N7-8x2" secondAttribute="centerY" id="t8U-ib-zPK"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96w-U5-73d">
+                                    <rect key="frame" x="0.0" y="217" width="320" height="1"/>
+                                    <color key="backgroundColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="i92-5L-tXm"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVg-1i-lAD">
+                                    <rect key="frame" x="0.0" y="103" width="320" height="1"/>
+                                    <color key="backgroundColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="0.59974315068493156" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="G7g-VC-gr1"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pd-zH-yzc">
+                                    <rect key="frame" x="0.0" y="112" width="320" height="40"/>
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-fu-x6H">
+                                            <rect key="frame" x="236" y="4.5" width="51" height="31"/>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bul-hD-njC" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="6.5" width="70.5" height="27"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="النصائح الاسبوعية"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="bul-hD-njC" firstAttribute="centerY" secondItem="4Pd-zH-yzc" secondAttribute="centerY" id="Ple-g0-EZs"/>
+                                        <constraint firstItem="bOS-fu-x6H" firstAttribute="centerY" secondItem="bul-hD-njC" secondAttribute="centerY" id="ciI-kN-j37"/>
+                                        <constraint firstAttribute="height" constant="40" id="hpY-00-Vnp"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L77-Gj-j5V">
+                                    <rect key="frame" x="0.0" y="274" width="320" height="1"/>
+                                    <color key="backgroundColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="h2n-ri-T5W"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOl-EF-5k0">
+                                    <rect key="frame" x="0.0" y="169" width="320" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqV-fd-MKj" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="18" y="6.5" width="80.5" height="27"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="سياسة الخصوصيات"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0v-ep-zfK" customClass="LocalizableButton" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="265" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="Kw5-GG-7t0"/>
+                                                <constraint firstAttribute="height" constant="20" id="zEd-2S-WHj"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" image="arrow_pointt">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="J0v-ep-zfK" firstAttribute="centerY" secondItem="nqV-fd-MKj" secondAttribute="centerY" id="DhE-XV-lBE"/>
+                                        <constraint firstAttribute="height" constant="40" id="YIg-m4-xHl"/>
+                                        <constraint firstItem="nqV-fd-MKj" firstAttribute="leading" secondItem="eOl-EF-5k0" secondAttribute="leading" constant="18" id="aHd-c5-HAg"/>
+                                        <constraint firstItem="nqV-fd-MKj" firstAttribute="centerY" secondItem="eOl-EF-5k0" secondAttribute="centerY" id="wx5-v4-0qV"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5p-DN-v1n">
+                                    <rect key="frame" x="0.0" y="331" width="320" height="1"/>
+                                    <color key="backgroundColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Ot4-fZ-bLK"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PKg-0u-CRN">
+                                    <rect key="frame" x="0.0" y="283" width="320" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tg-3K-4yJ" customClass="LocalizableButton" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="265" y="10" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="UJu-yt-99B"/>
+                                                <constraint firstAttribute="width" constant="20" id="fga-xq-YDk"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.6588235294" green="0.6588235294" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" image="forward">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="changeLanguageBtn:" destination="-1" eventType="touchUpInside" id="RQm-2M-hvx"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCJ-CY-6TA" customClass="LocalizableLabel" customModule="MomCare" customModuleProvider="target">
+                                            <rect key="frame" x="18" y="6.5" width="109" height="27"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إعدادات اللغة"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="6tg-3K-4yJ" firstAttribute="centerY" secondItem="fCJ-CY-6TA" secondAttribute="centerY" id="Adg-Ye-oem"/>
+                                        <constraint firstItem="fCJ-CY-6TA" firstAttribute="centerY" secondItem="PKg-0u-CRN" secondAttribute="centerY" id="BIl-1g-BVP"/>
+                                        <constraint firstAttribute="height" constant="40" id="iDN-oh-O2q"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="fCJ-CY-6TA" firstAttribute="leading" secondItem="Yz2-wM-cNk" secondAttribute="leading" id="1k5-ww-QSL"/>
+                                <constraint firstItem="bOS-fu-x6H" firstAttribute="trailing" secondItem="qh4-fA-O9A" secondAttribute="trailing" id="4c3-h0-jZy"/>
+                                <constraint firstItem="EZj-nF-VY7" firstAttribute="leading" secondItem="4Pd-zH-yzc" secondAttribute="leading" id="5cc-W3-dPX"/>
+                                <constraint firstAttribute="trailing" secondItem="VeE-N7-8x2" secondAttribute="trailing" id="5gl-qk-FMC"/>
+                                <constraint firstItem="sr0-S5-c2V" firstAttribute="top" secondItem="Xu6-Pu-NKk" secondAttribute="top" constant="-3" id="605-S4-Swl"/>
+                                <constraint firstAttribute="trailing" secondItem="96w-U5-73d" secondAttribute="trailing" id="6CF-2e-cEC"/>
+                                <constraint firstItem="guC-7P-zhA" firstAttribute="top" secondItem="sr0-S5-c2V" secondAttribute="bottom" constant="8" id="6uR-3e-T6C"/>
+                                <constraint firstItem="guC-7P-zhA" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="7NN-3B-9o9"/>
+                                <constraint firstItem="tnC-9y-5Xf" firstAttribute="trailing" secondItem="J0v-ep-zfK" secondAttribute="trailing" id="9aV-Re-Xhl"/>
+                                <constraint firstItem="L77-Gj-j5V" firstAttribute="top" secondItem="VeE-N7-8x2" secondAttribute="bottom" constant="8" id="Crf-pY-gba"/>
+                                <constraint firstItem="bul-hD-njC" firstAttribute="leading" secondItem="aO5-iF-eHy" secondAttribute="leading" id="D9H-6e-YgZ"/>
+                                <constraint firstAttribute="trailing" secondItem="zVg-1i-lAD" secondAttribute="trailing" id="EOc-ah-EEb"/>
+                                <constraint firstItem="EZj-nF-VY7" firstAttribute="trailing" secondItem="4Pd-zH-yzc" secondAttribute="trailing" id="Ec2-Nf-Gt1"/>
+                                <constraint firstAttribute="trailing" secondItem="4Pd-zH-yzc" secondAttribute="trailing" id="GbL-Jg-KiC"/>
+                                <constraint firstItem="zVg-1i-lAD" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="GfU-ec-eK5"/>
+                                <constraint firstItem="L77-Gj-j5V" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="Gzs-fr-1Dq"/>
+                                <constraint firstItem="PKg-0u-CRN" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="HLl-eR-5tO"/>
+                                <constraint firstItem="eOl-EF-5k0" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="HSQ-HR-5qT"/>
+                                <constraint firstItem="96w-U5-73d" firstAttribute="top" secondItem="eOl-EF-5k0" secondAttribute="bottom" constant="8" id="HsX-I5-PJd"/>
+                                <constraint firstItem="6tg-3K-4yJ" firstAttribute="trailing" secondItem="tnC-9y-5Xf" secondAttribute="trailing" id="IG3-rq-hFc"/>
+                                <constraint firstItem="A5p-DN-v1n" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="JSc-Th-Ejd"/>
+                                <constraint firstItem="sr0-S5-c2V" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="K1h-JJ-Np6"/>
+                                <constraint firstItem="96w-U5-73d" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="OEm-eC-SRX"/>
+                                <constraint firstAttribute="trailing" secondItem="L77-Gj-j5V" secondAttribute="trailing" id="OYK-Sr-VIg"/>
+                                <constraint firstItem="eOl-EF-5k0" firstAttribute="top" secondItem="EZj-nF-VY7" secondAttribute="bottom" constant="8" id="R3t-zY-eXT"/>
+                                <constraint firstAttribute="trailing" secondItem="PKg-0u-CRN" secondAttribute="trailing" id="Rbn-MU-ty6"/>
+                                <constraint firstItem="zVg-1i-lAD" firstAttribute="top" secondItem="guC-7P-zhA" secondAttribute="bottom" constant="8" id="Tj3-sZ-Gdb"/>
+                                <constraint firstItem="PKg-0u-CRN" firstAttribute="top" secondItem="L77-Gj-j5V" secondAttribute="bottom" constant="8" id="W4F-zz-za5"/>
+                                <constraint firstItem="4Pd-zH-yzc" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="W7z-hV-rRn"/>
+                                <constraint firstItem="VeE-N7-8x2" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="Xuo-Hz-Jtm"/>
+                                <constraint firstAttribute="trailing" secondItem="zVg-1i-lAD" secondAttribute="trailing" id="YmQ-wR-w1y"/>
+                                <constraint firstItem="EZj-nF-VY7" firstAttribute="top" secondItem="4Pd-zH-yzc" secondAttribute="bottom" constant="8" id="ZqP-I3-yGt"/>
+                                <constraint firstAttribute="trailing" secondItem="eOl-EF-5k0" secondAttribute="trailing" id="aKa-XD-81S"/>
+                                <constraint firstAttribute="height" constant="650" id="bwM-QK-fNd"/>
+                                <constraint firstAttribute="trailing" secondItem="sr0-S5-c2V" secondAttribute="trailing" id="cEA-jD-e1K"/>
+                                <constraint firstItem="VeE-N7-8x2" firstAttribute="top" secondItem="96w-U5-73d" secondAttribute="bottom" constant="8" id="dUa-ya-4t6"/>
+                                <constraint firstItem="A5p-DN-v1n" firstAttribute="top" secondItem="PKg-0u-CRN" secondAttribute="bottom" constant="8" id="e7D-Ah-9Jh"/>
+                                <constraint firstAttribute="trailing" secondItem="guC-7P-zhA" secondAttribute="trailing" id="hVA-oZ-kJw"/>
+                                <constraint firstItem="J0v-ep-zfK" firstAttribute="trailing" secondItem="bOS-fu-x6H" secondAttribute="trailing" id="kYo-Bh-wEj"/>
+                                <constraint firstItem="zVg-1i-lAD" firstAttribute="leading" secondItem="Xu6-Pu-NKk" secondAttribute="leading" id="lSE-2e-PhR"/>
+                                <constraint firstItem="Yz2-wM-cNk" firstAttribute="leading" secondItem="nqV-fd-MKj" secondAttribute="leading" id="lY3-10-D6a"/>
+                                <constraint firstAttribute="trailing" secondItem="A5p-DN-v1n" secondAttribute="trailing" id="nPI-5H-fhH"/>
+                                <constraint firstItem="4Pd-zH-yzc" firstAttribute="top" secondItem="zVg-1i-lAD" secondAttribute="bottom" constant="8" id="tvx-Wg-SQ7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Xu6-Pu-NKk" secondAttribute="trailing" id="5c1-xD-J5o"/>
+                        <constraint firstItem="Xu6-Pu-NKk" firstAttribute="leading" secondItem="5WN-CA-FBc" secondAttribute="leading" id="Rfq-GE-P9e"/>
+                        <constraint firstItem="Xu6-Pu-NKk" firstAttribute="height" secondItem="5WN-CA-FBc" secondAttribute="height" priority="250" id="dSL-kN-cFT"/>
+                        <constraint firstItem="Xu6-Pu-NKk" firstAttribute="top" secondItem="5WN-CA-FBc" secondAttribute="top" id="g5f-lV-W3G"/>
+                        <constraint firstAttribute="bottom" secondItem="Xu6-Pu-NKk" secondAttribute="bottom" id="hkB-D6-a51"/>
+                        <constraint firstItem="Xu6-Pu-NKk" firstAttribute="width" secondItem="5WN-CA-FBc" secondAttribute="width" id="o1M-H1-sGD"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="dih-aP-0dQ"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="cJS-gB-a2P"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EU8-Q8-RjV">
+                    <rect key="frame" x="0.0" y="-6" width="320" height="50"/>
+                    <color key="backgroundColor" red="0.22352941176470587" green="0.76470588235294112" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fZY-9y-TtT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="EU8-Q8-RjV" firstAttribute="bottom" secondItem="5WN-CA-FBc" secondAttribute="top" id="2aa-hk-Emt"/>
+                <constraint firstItem="5WN-CA-FBc" firstAttribute="top" secondItem="Wnu-Wy-mVL" secondAttribute="top" id="MCH-mz-96d"/>
+                <constraint firstItem="5WN-CA-FBc" firstAttribute="leading" secondItem="Wnu-Wy-mVL" secondAttribute="leading" id="VaY-Wm-w1J"/>
+                <constraint firstItem="EU8-Q8-RjV" firstAttribute="leading" secondItem="Wnu-Wy-mVL" secondAttribute="leading" id="Zgg-g8-ODn"/>
+                <constraint firstItem="Wnu-Wy-mVL" firstAttribute="trailing" secondItem="EU8-Q8-RjV" secondAttribute="trailing" id="jHc-OD-vGf"/>
+                <constraint firstItem="Wnu-Wy-mVL" firstAttribute="bottom" secondItem="5WN-CA-FBc" secondAttribute="bottom" id="leM-5P-nqW"/>
+                <constraint firstItem="Wnu-Wy-mVL" firstAttribute="trailing" secondItem="5WN-CA-FBc" secondAttribute="trailing" id="qwK-F5-Du5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Wnu-Wy-mVL"/>
+            <point key="canvasLocation" x="47.826086956521742" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_pointt" width="13.5" height="24"/>
+        <image name="forward" width="50" height="50"/>
+    </resources>
+</document>
